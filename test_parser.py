@@ -97,6 +97,6 @@ conn.close()
 
 # скрипт для того, чтобы код выполнялся каждые 10 минут
 
-# schedule.every(10).minutes.do(parser)
-# while True:
-#     schedule.run_pending()
+schedule.every(10).minutes.do(parser)
+while True:
+    schedule.run_pending()
